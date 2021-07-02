@@ -58,6 +58,7 @@ namespace API
 
             app.UseRouting();
 
+            //Changed from http to https as per the ssl certificate added in Angular App.
             app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
             app.UseAuthorization();
